@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
+
+@media only screen and (max-width: 790px) {
+  body {
+    .headBox {
+      header {
+        .headRight {
+          visibility: hidden;
+          background-color: #ebebeb;
+          width: 20% !important;
+          min-width: 0px !important;
+          border: 1px solid red;
+          justify-content: center;
+          flex-direction: column;
+          nav {
+            border: 1px solid green;
+            ul {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              border: 1px solid yellow;
+
+              li {
+                line-height: normal !important;
+                margin: 0px;
+                border: 1px solid black;
+                padding: 5px;
+                width: 100%;
+                text-align: center;
+                a {
+                  border: 0;
+                  padding: 0px;
+                }
+                a:hover {
+                  border-bottom: 2px solid black;
+                  padding: 0px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  //nav
+  .headBox {
+    height: 80px;
+    width: 100vw;
+    box-shadow: 0 1px 0 #ebebeb;
+    background-color: fff;
+    margin-bottom: 10px;
+    font-family: "Lato", sans-serif;
+    align-content: center;
+    display: flex;
+    header {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+      .headLeft {
+        width: 50%;
+        min-width: 400px;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+        .logo {
+          height: 70px;
+          width: 100px;
+          padding: 0 24px 0 24px;
+        }
+        form {
+          border: 0px;
+          margin: auto;
+          width: 80%;
+          height: auto;
+          min-width: 300px;
+          display: flex;
+          padding: 10px 1em;
+          position: relative;
+          input {
+            font-size: 17px;
+            color: #484848;
+            width: 100%;
+            outline: none;
+            transition: background 0.3s ease;
+            padding: 12px 35px;
+            box-shadow: 0 0 3px #666;
+            border-radius: 5px;
+            border: none;
+          }
+          .search-icon {
+            border: none;
+            background: none;
+            outline: none;
+            box-shadow: none;
+            position: absolute;
+            right: 250px;
+            top: 0px;
+            bottom: 0px;
+          }
+        }
+      }
+      .headRight {
+        display: flex;
+        width: 50%;
+        min-width: 400px;
+        justify-content: flex-start;
+        flex-direction: row;
+        margin: 0px;
+
+        nav {
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: row;
+          width: 100%;
+          align-items: center;
+          ul {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            li {
+              line-height: 70px;
+              transition: ease-in-out 0.3s;
+              margin-right: 30px;
+              font-weight: 500;
+
+              a {
+                color: #000;
+                text-decoration: none;
+                text-decoration-line: none;
+                transition: ease-in-out 0.5s;
+                border-bottom: 2px solid rgba(0, 0, 0, 0);
+                border-top: 2px solid rgba(0, 0, 0, 0);
+                padding-bottom: 30px;
+              }
+              a:hover {
+                border-bottom: 2px solid black;
+                padding-bottom: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section {
+    font-family: "Lato", sans-serif;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: left;
+    justify-content: space-evenly;
+
+    .content {
+      display: flex;
+      width: 98%;
+      flex-wrap: wrap;
+      align-content: left;
+      justify-content: space-evenly;
+      max-width: 1300px;
+      height: auto;
+      border-radius: 3px;
+      h1 {
+        margin: auto;
+        width: 100%;
+        text-align: left;
+        font-size: 25px;
+        line-height: 40px;
+      }
+      .box {
+        //width: 32%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        max-width: 402px;
+        border-radius: 3px;
+        overflow: hidden;
+        .contentBox {
+          width: 100%;
+          height: 100%;
+          border-radius: 3px;
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          justify-content: center;
+          transition: ease-in-out 0.2s;
+          .containerImg {
+            display: flex;
+            max-width: 400px;
+            max-height: 300px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .imgBox {
+              display: block;
+              transition: ease-in-out 0.2s;
+              img:hover {
+                transform: scale(0.95);
+                transition: ease-in-out 0.2s;
+              }
+              img {
+                border-radius: 3px;
+                max-width: 900px;
+                transition: ease-in-out 0.2s;
+                display: block;
+              }
+            }
+          }
+          .description {
+            display: flex;
+            flex-direction: column;
+            align-content: flex-start;
+            font-size: 70%;
+            text-align: left;
+            p {
+              margin: 0px;
+              padding: 0px;
+              line-height: 20px;
+              font-weight: 400;
+              color: gray;
+            }
+            h2 {
+              font-size: 14px;
+              margin: 0px;
+              padding: 0px;
+              line-height: 26px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
