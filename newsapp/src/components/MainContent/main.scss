@@ -1,0 +1,130 @@
+.mainPart{
+    width: 78%;
+    height: 100%;
+    display: flex;
+    align-content: flex-start;
+    align-items: stretch;
+    flex-direction: column;
+    .cardItem{
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        position: relative;
+        background-color: white;
+        margin-bottom: 20px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: ease-in-out 0.4s;
+        margin-bottom: 25px;
+        .cardImg{
+            width: 33%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 5px;
+            .cardBox{
+                height: 100%;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                img{
+                    width:450px;
+                    position: absolute;
+                    transition: ease-in-out 0.4s;
+                }
+                img:hover{
+                    transform: scale(1.1);
+                }
+            }
+            
+        }
+        .cardContent{
+            width: 62%;
+            height: 100%;
+            margin : 0 10px;
+            position: relative;
+           
+            .titleAndAuthor{
+                overflow: hidden;
+                width: 100%;
+                h1{
+                    margin:20px 0 0 0;
+                    padding: 0px;
+                    font-size: 20px;
+                    color:rgb(67, 74, 92);
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    height: 25px ;
+                } 
+                p{
+                    font-weight: 400;
+                    font-size: 14px;
+                    
+                }  
+                
+            }
+            .cardDescription{
+                margin:10px 0;
+                padding: 0px;
+                height: 60px;
+                overflow: hidden;
+            p{
+                color:gray;
+                height: 42px;
+                font-weight: 400;
+                padding: 0px;
+                line-height: 21px;
+                font-size: 16px;
+                width: 100%;
+                
+                text-overflow: ellipsis;
+                //white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+            .authorBox{
+                display: flex;
+                margin-top:5px;
+                p{
+                    font-size: 14px;
+                    color:gray;
+                    margin:0;
+                    padding: 0;
+                }
+            }
+            button{
+                color:white;
+                background-color: #2090E6;
+                border-radius: 5px;
+                font-size: 14px;
+                line-height: 30px;
+                padding: 0 15px;
+                text-transform: uppercase;
+                transition: ease-in-out 0.3s;
+                margin-bottom: 20px;
+                
+            }
+            button:hover{
+                background-color: rgb(68, 165, 240);
+            }}
+        
+        .cardShare{
+            width: 6%;
+            height: 100%;
+            justify-content: space-evenly;
+            display: flex;
+           
+            i{
+                margin-top:10px;
+                opacity: 0.3;
+                transition: ease-in-out 0.3s;
+            }
+            i:hover{opacity: 1;}
+        }}
+    .cardItem:hover{
+        background-color:whitesmoke;
+        transition: ease-in-out 0.4s;
+    }
+}

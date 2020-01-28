@@ -1,0 +1,26 @@
+.burgherMenu {
+  height: 25px;
+  width: 30px;
+  background: transparent;
+  border: none;
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  padding: 0;
+  justify-content: space-around;
+  .menuLine {
+    width: 25px;
+    height: 2px;
+    background: black;
+  }
+}
+.burgherMenu:focus {
+  outline: none;
+}
+@media only screen and (min-width: 700px) {
+  .burgherMenu{
+    display: none;
+  }
+}
+
+
