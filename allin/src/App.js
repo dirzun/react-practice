@@ -7,6 +7,8 @@ import CustomPropValidation from './Components/CustomPropTypeValidation';
 import EvReactSynt from './Components/EventReactSyntEvent'
 import ReferenceToSpecificCom from './Components/ReferenceToSpecificComp';
 import Wrapper from './Components/ComponentLifecycleMethods';
+import HigherOC from './Components/HOC';
+import LiveCompiler from './Components/LiveCompiler';
 
 class App extends React.Component {
   render(){
@@ -20,8 +22,9 @@ class App extends React.Component {
       <EvReactSynt/>
       <ReferenceToSpecificCom />
       <Wrapper />
+      <HigherOC />
       */}
-      
+      <LiveCompiler />
     </div>
   );
   }
