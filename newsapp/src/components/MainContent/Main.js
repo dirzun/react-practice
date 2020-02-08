@@ -5,7 +5,7 @@ import Sidebar from "./sideBar/Sidebar";
 import ContentCard from "./ContentCard.js";
 
 const Main = () =>{
-    const [myData, setMyData] = useState([])
+    const [myData, setMyData] = useState([]);
     const data = [{
         title : "X bunny fan",
         description : " It's all about hamster",
