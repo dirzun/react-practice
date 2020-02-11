@@ -19,3 +19,5 @@ class FromValue extends React.Component{
         )
     }
 }
+
+export default FromValue
